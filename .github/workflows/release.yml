@@ -270,7 +270,7 @@ jobs:
           prerelease: false
           draft: false
           generate_release_notes: false
-          body: "Redmi Note 12 Pro 5G (ruby) kernel patched with [KernelSU-Next](https://github.com/KernelSU-Next/KernelSU-Next) ${{ steps.integrate-kernelsu-next.outputs.KERNELSU_NEXT_VERSION }} + [SuSFS patches](https://gitlab.com/simonpunk/susfs4ksu).\n\n**Installation:**\n1. Flash the kernel from this release.\n2. Download and install the KernelSU-Next manager APK from here:\n> [Stable Version](https://github.com/KernelSU-Next/KernelSU-Next/releases) || [Nightly Version](https://nightly.link/KernelSU-Next/KernelSU-Next/workflows/build-manager/next/manager)\n\n3. Download and install the SuSFS Module from here: https://github.com/sidex15/susfs4ksu-module/releases/latest"
+          body: "Redmi Note 12 Pro 5G (ruby) kernel patched with [KernelSU-Next](https://github.com/KernelSU-Next/KernelSU-Next) ${{ steps.integrate-kernelsu-next.outputs.KERNELSU_NEXT_VERSION }} + [SuSFS patches](https://gitlab.com/simonpunk/susfs4ksu).\n\n**Installation:**\n1. Flash the kernel from this release.\n2. Download and install the KernelSU-Next manager APK from here:\n> [Stable Version](https://github.com/KernelSU-Next/KernelSU-Next/releases) || [Nightly Version](https://nightly.link/KernelSU-Next/KernelSU-Next/workflows/build-manager-ci/next/Manager)\n\n3. Download and install the SuSFS Module from here: https://github.com/sidex15/susfs4ksu-module/releases/latest"
           files: "${{ env.WORKSPACE }}/${{ env.KERNEL_DEVICE }}-Next-SuSFS-${{ steps.integrate-kernelsu-next.outputs.KERNELSU_NEXT_VERSION }}-${{ env.builddate }}.zip"
           fail_on_unmatched_files: true
           preserve_order: true    
